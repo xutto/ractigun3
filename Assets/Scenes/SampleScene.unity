@@ -611,6 +611,16 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 524806665}
+    - target: {fileID: 3876042037653562875, guid: f65720ff5cc2c3344872e0e567e97eba,
+        type: 3}
+      propertyPath: timeToAttack
+      value: 9.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876042037653562875, guid: f65720ff5cc2c3344872e0e567e97eba,
+        type: 3}
+      propertyPath: retractrileSpeed
+      value: 9.13
+      objectReference: {fileID: 0}
     - target: {fileID: 3876042037653562877, guid: f65720ff5cc2c3344872e0e567e97eba,
         type: 3}
       propertyPath: m_LocalPosition.x
