@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BulletControl : MonoBehaviour
 {
+    public int damage = 1;
     public float speed = 10;
     public float limitReach = 60;
     private float reach;
@@ -24,4 +25,5 @@ public class BulletControl : MonoBehaviour
         }
 
     }
+
 }

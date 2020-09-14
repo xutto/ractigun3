@@ -22,18 +22,18 @@ public class MovementController : MonoBehaviour
 
     public float retractrileSpeed = 12.0F;
 
-    public GameObject player;
+    private GameObject player;
 
     public float rotateSpeed = 20;
 
-    public float timeToAttack = 0;
+    public float timeTargeting = 0;
 
     public int phase = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -68,8 +68,8 @@ public class MovementController : MonoBehaviour
     {
         if (finish == 1)
         {
-            timeToAttack -= Time.deltaTime;
-            if (timeToAttack < 0)
+            timeTargeting -= Time.deltaTime;
+            if (timeTargeting < 0)
             {
                 phase = 1;
             }

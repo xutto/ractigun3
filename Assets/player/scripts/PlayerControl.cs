@@ -79,11 +79,6 @@ namespace game.player
             float limitCameraX = mainCamera.transform.position.x + horizontalSize / 2;
             float limitCameraY = mainCamera.transform.position.y + verticalSize / 2;
 
-            Debug.Log("limitCameraR ======= >>" + limitCameraX);
-            Debug.Log("limitCameraL ======= >>" + limitCameraX * (-1));
-            Debug.Log("limitCameraU ======= >>" + limitCameraY);
-            Debug.Log("limitCameraD ======= >>" + limitCameraY * (-1));
-
             mapLimits.Add("limitCameraX", limitCameraX);
             mapLimits.Add("limitCameraY", limitCameraY);
 
