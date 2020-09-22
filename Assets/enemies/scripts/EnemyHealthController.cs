@@ -8,17 +8,23 @@ public class EnemyHealthController : MonoBehaviour
     public int healt = 10;
 
 
-    private void OnTriggerEnter2D(Collider2D bullet)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        BulletControl bulletControl = bullet.gameObject.GetComponent<BulletControl>();
-        Destroy(bullet.gameObject);
-        healt -= bulletControl.damage;
 
-        if (healt <= 0)
+        if (other.gameObject.CompareTag("playerBullet"))
         {
-            Destroy(gameObject);
-        }
 
-        Debug.Log("DAMAGE OF BULLET IS: " + bulletControl.damage);
+            BulletControl bulletControl = other.gameObject.GetComponent<BulletControl>();
+            Destroy(other.gameObject);
+            healt -= bulletControl.damage;
+
+            if (healt <= 0)
+            {
+                Destroy(gameObject);
+            }
+
+            Debug.Log("DAMAGE OF BULLET IS: " + bulletControl.damage);
+
+        }
     }
 }
