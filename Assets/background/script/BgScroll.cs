@@ -6,7 +6,7 @@ public class BgScroll : MonoBehaviour
 {
 
    [SerializeField]
-    [Range(2, 100)]
+    [Range(0.1f, 100)]
     private float speed = 2;
 
     // Start is called before the first frame update

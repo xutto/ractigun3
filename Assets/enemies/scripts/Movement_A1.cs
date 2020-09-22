@@ -6,7 +6,11 @@ public class Movement_A1 : MonoBehaviour
 {
 
     public float speed = 1;
-    public int phase = 0;
+    public float rotateSpeed = 30f;
+    public float timeToRotate = 10f;
+    public float rotationTime = 1f;
+    private float timeToChange = 0;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,12 +23,28 @@ public class Movement_A1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (phase == 0)
+
+        if (timeToChange >= timeToRotate)
+        {
+
+
+            transform.Translate(Vector2.up * speed * Time.deltaTime);
+            if (rotationTime >= 0)
+            {
+                transform.Rotate(Vector3.forward * rotateSpeed * Time.deltaTime);
+                rotationTime -= Time.deltaTime;
+            }
+
+        }
+        else
         {
             transform.Translate(Vector2.up * speed * Time.deltaTime);
-        } else if (phase == 1){
-            transform.rotation = Quaternion.Euler(Vector3.forward * 180.0f);
+            timeToChange += Time.deltaTime;
         }
+
+
+
+
 
 
     }
@@ -34,3 +54,4 @@ public class Movement_A1 : MonoBehaviour
 
     }
 }
+// transform.Rotate(Vector3.forward * rotateSpeed * Time.deltaTime);

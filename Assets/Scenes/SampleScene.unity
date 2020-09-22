@@ -132,7 +132,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1749644611, guid: ff0d4cb8127a98e40b75479eee5b9fdb, type: 3}
       propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749644611, guid: ff0d4cb8127a98e40b75479eee5b9fdb, type: 3}
+      propertyPath: phase
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749644611, guid: ff0d4cb8127a98e40b75479eee5b9fdb, type: 3}
+      propertyPath: rotateSpeed
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749644611, guid: ff0d4cb8127a98e40b75479eee5b9fdb, type: 3}
+      propertyPath: timeToRotate
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749644611, guid: ff0d4cb8127a98e40b75479eee5b9fdb, type: 3}
+      propertyPath: rotationTime
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1639107103633241177, guid: ff0d4cb8127a98e40b75479eee5b9fdb,
         type: 3}
@@ -142,7 +158,7 @@ PrefabInstance:
     - target: {fileID: 4617154221090395320, guid: ff0d4cb8127a98e40b75479eee5b9fdb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.07
+      value: -15.29
       objectReference: {fileID: 0}
     - target: {fileID: 4617154221090395320, guid: ff0d4cb8127a98e40b75479eee5b9fdb,
         type: 3}
@@ -309,7 +325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532df9b47b108304ab9b17479c6f9c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.5
 --- !u!212 &994448960
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -438,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532df9b47b108304ab9b17479c6f9c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.1
+  speed: 1.5
 --- !u!212 &1369635609
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -580,7 +596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532df9b47b108304ab9b17479c6f9c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.2
 --- !u!212 &1900861643
 SpriteRenderer:
   m_ObjectHideFlags: 0
