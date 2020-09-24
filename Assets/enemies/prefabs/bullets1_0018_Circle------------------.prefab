@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8901930414897544455}
   - component: {fileID: 8901930414897544452}
   - component: {fileID: 8901930414897544453}
+  - component: {fileID: 2872442003963540498}
   m_Layer: 0
   m_Name: bullets1_0018_Circle------------------
   m_TagString: Untagged
@@ -96,3 +97,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &2872442003963540498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8901930414897544450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec51f35f6e9ec3740b2a319e955a1c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

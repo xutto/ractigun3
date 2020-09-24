@@ -48,20 +48,8 @@ public class MovementController : MonoBehaviour
         }
         else if (phase == 1)
         {
-            if (MoveToExit(25, Vector2.up, Space.World) == 1)
-            {
-                phase = 2;
-            }
+            MoveToExit(25, Vector2.up, Space.World);
         }
-        else if (phase == 2)
-        {
-            destroyObject();
-        }
-    }
-
-    private void destroyObject()
-    {
-        Destroy(this.gameObject);
     }
 
     private void ChangePhase(int finish)
@@ -124,18 +112,14 @@ public class MovementController : MonoBehaviour
 
     }
 
-    private int MoveToExit(float toPosition, Vector2 direction, Space refecerence)
+    private void MoveToExit(float toPosition, Vector2 direction, Space refecerence)
     {
-        int flagToFinish = 0;
+
         if (transform.position.y < toPosition)
         {
             transform.Translate(retractrileSpeed * Time.deltaTime * direction, refecerence);
         }
-        else
-        {
-            flagToFinish = 1;
-        }
-        return flagToFinish;
+
     }
 }
 /*

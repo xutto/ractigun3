@@ -45,7 +45,9 @@
      <Compile Include="Assets\enemies\scripts\MovementController.cs" />
      <Compile Include="Assets\enemies\scripts\EnemiesManager.cs" />
      <Compile Include="Assets\player\scripts\PlayerControl.cs" />
-     <Compile Include="Assets\enemies\scripts\Movement_A1.cs" />
+     <Compile Include="Assets\enemies\scripts\Movement_B.cs" />
+     <Compile Include="Assets\common\_scripts\limitScreen.cs" />
+     <Compile Include="Assets\enemies\scripts\Movement_C.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
